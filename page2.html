@@ -99,48 +99,48 @@
 				<div class="container bloc-lg">
 					<div class="row">
 						<div class="col-sm-6">
-							<form
-								id="form_1"
-								novalidate
-								success-msg="Your message has been sent."
-								fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
-							>
+							<form id="form_1" action="./includes/form_1.php" method="post">
 								<div class="form-group">
-									<label>Nom</label>
+									<label for="name">Nom :</label>
 									<input
-										id="name"
 										class="form-control"
+										type="text"
+										name="name"
+										id="name"
 										placeholder="Votre nom"
 										required
 									/>
 								</div>
 								<div class="form-group">
-									<label>Adresse email</label>
+									<label for="email">Adresse email :</label>
 									<input
-										id="email"
 										class="form-control"
-										placeholder="Votre email"
 										type="email"
+										id="email"
+										name="email"
+										placeholder="Votre email"
 										required
 									/>
 								</div>
 								<div class="form-group">
-									<label>Comment nous avez-vous connu ?</label>
+									<label for="input_504">Comment nous avez vous connu ?</label>
 									<input
 										class="form-control"
 										type="text"
+										id="input_504"
 										placeholder="Google, Radio, TV..."
 										required
-										id="input_504"
 									/>
 								</div>
 								<div class="form-group">
 									<label
 										>Brief de votre projet (Ajoutez autant de détails que
-										nécessaire)</label
+										nécessaire) :</label
 									><textarea
-										id="message"
 										class="form-control"
+										type="text"
+										id="message"
+										name="message"
 										placeholder="En quelques lignes..."
 										rows="4"
 										cols="50"
@@ -148,8 +148,8 @@
 									></textarea>
 								</div>
 								<button
-									class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
 									type="submit"
+									class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
 								>
 									Envoyer
 								</button>

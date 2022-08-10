@@ -659,7 +659,7 @@ a {
 }
 
 .container {
-	max-width: 1000px;
+	width: 100%;
 }
 
 .hero-bloc-text {

@@ -516,11 +516,8 @@ button {
 .scrollToTop {
 	width: 40px;
 	height: 40px;
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	opacity: 0;
-	z-index: 500;
+	float: right;
+
 	transition: all 0.3s ease-in-out;
 }
 
@@ -530,7 +527,6 @@ button {
 
 .showScrollTop {
 	font-size: 14px;
-	opacity: 1;
 }
 
 a[data-lightbox] {
@@ -664,6 +660,7 @@ a {
 
 .hero-bloc-text {
 	font-size: 38px;
+	color: #333333;
 }
 
 .hero-bloc-text-sub {
@@ -681,7 +678,8 @@ a {
 }
 
 p {
-	font-size: 11px;
+	font-size: 14px;
+	color: #333333;
 }
 
 .tight-width-whitespace {
@@ -706,6 +704,8 @@ p {
 .social {
 	max-width: 400px;
 	margin: auto auto auto auto;
+	display: flex;
+	justify-content: center;
 }
 
 h2 {
@@ -747,6 +747,12 @@ h4 {
 	margin-bottom: 24px;
 }
 
+.img-responsive {
+	width: 100%;
+}
+.col-sm-3 {
+	width: 25%;
+}
 .portfolio-row {
 	margin-bottom: 44px;
 	margin-top: 50px;
